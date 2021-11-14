@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<div class="header" th:fragment="bodyHeader">
+  <style>
+
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|ZCOOL+QingKe+HuangYou');
+
+@charset "utf-8";
+
+* {
+	margin:0;
+	padding:0;
+	color:#000;
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	box-sizing: border-box;
+}
+
+.fn-font {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+header {
+	width:100%;
+	height:80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container {
+	width:1440px;
+	margin:0 auto;
+}
+
+header > h2 {
+	margin-left:20px;
+}
+
+header > nav {
+	width:600px;
+	height:100%;
+}
+
+header ul {
+	width:100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+header ul > li {
+	font-size:20px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+  </style>
+  <body>
+
+  <div class="container">
+    <header>
+      <h2>lunchPick</h2>
+      <nav>
+        <ul>
+          <li><a href="#">랜던 런치픽</a></li>
+          <li><a href="">나의 런치픽</a></li>
+          <li><a href="">주위 런치픽</a></li>
+          <li><a href="">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  </body>
+</div>
+</html>
