@@ -10,4 +10,19 @@ public class HomeController {
     public String home() {
         return "home";
     }
+
+    @RequestMapping("/locLunchPick")
+    public String location() {
+        return "location_lunch";
+    }
+
+    @RequestMapping("/myLunchPick")
+    public String my() {
+        return "my_lunch";
+    }
+
+    @RequestMapping("/ranLunchPick")
+    public String random() {
+        return "random_lunch";
+    }
 }
